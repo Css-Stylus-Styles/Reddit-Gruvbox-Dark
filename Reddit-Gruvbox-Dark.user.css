@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           www.reddit.com - Mar 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -935,14 +935,90 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /*Geneal Styles */
 
 	svg {
 		
 		color : #98971a !important  ; 
-	
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Small Headings and other Secondary text */
+	
+	/*Main Text color */
+	.text-14 {
+	color: #fbf1c7 !important ;
+ 	font-family: "Literata Variable" !important ; 
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+	
+	/*Reddit Subreddit names */
+	/*Reddit Front and subreddits */
+	a.flex {
+		color: #83a598 !important ;
+		font-family: "Jetbrains Mono" !important  ; 
+		font-size: 0.84rem !important ; 
+    padding: 0.1rem; /* Adjust padding */
+    border-radius: 8px; /* Add rounded corners */
+}
+	
+	/*Reddit Main page Headings */
+	.text-secondary-weak {
+    color: #5c7b42 !important ; 
+		font-family: "Bricolage Grotesque" !important ; 
+}
+	
+	
+	
+	/*Reddit Front page */
+	/*Reedit interface side bar posts titles */
+h3.i18n-list-item-post-title {
+    color: #8ec07c !important;
+    font-family: "Bricolage Grotesque" !important ; 
+    line-height: 1.5; /* Adjust the line height */
+    margin-bottom: 0.5rem; /* Add some margin at the bottom */
+}
+	
+	
+	
+	
+	/*Hide Stuff*/
+	a#reddit-logo{
+		display: none !important ;
+	}
+	
+	
+	
+	
+	
 	
 	
 	
