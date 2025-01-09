@@ -519,7 +519,10 @@
     --color-shimmer-background: #ffffff08;
     --color-shimmer-gradient-overlay: linear-gradient(to right, #ffffff00, #ffffff05 20%, #ffffff0f 50%, #ffffff08 70%, #ffffff00 100%);
 		
-		--color-input-border: red !important ; 
+		
+		
+		/*INput DIv color background */
+		--color-input-border: #5c7b42 !important ; 
 }
 	
 	
@@ -551,7 +554,7 @@
     --line-button-sm-border: var(--line-sm);
     --line-button-xs-border: var(--line-sm);
     --line-button-border-activated: var(--line-lg);
-    --line-input-border: var(--line-lg);
+    --line-input-border: 2rem !important ; 
     --radius-md: 1.25rem;
     --radius-accordion-size: 0px;
     --font-10: normal undefined null/null var(--font-sans);
@@ -786,8 +789,8 @@
     --color-upvote-plain-weaker: #FF4500;
     --color-warning-background: #B78800;
     --color-warning-background-hover: #977000;
-    --color-warning-content: #785800;
-    --color-warning-content-hover: #5B4200;
+    --color-warning-content: #282828;
+    --color-warning-content-hover: #cc241d;
     --color-warning-onBackground: #000000;
     --color-a-default: var(--color-primary);
     --color-a-hover: var(--color-primary-hover);
@@ -807,7 +810,7 @@
     --color-banner-brand-text: var(--color-brand-onBackground);
     --color-button-overlay-focus: transparent;
     --color-button-overlay-active: transparent;
-    --color-button-border-width: tomato;
+    --color-button-border-width: #e4b649;
     --color-button-border-width-activated: tomato;
     --color-button-primary-background-hover: var(--color-primary-background-hover);
     --color-button-primary-background-activated: var(--color-primary-background-selected);
@@ -910,8 +913,8 @@
 }
 	
 	div.label-container{
-			color : red !important ; 
-		background: red !important ; 
+			color : #fb4934 !important ; 
+		background: #fb4934 !important ; 
 	}
 	
 	.input-container{
@@ -926,17 +929,19 @@
 		border-width: 2px !important ; 
 }
 	
-	
-	
-	.shadow-sm {
-    --tw-shadow: red !important  ;
-    --tw-shadow-colored: var(--elevation-sm);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-	
-	
 
 	
+	
+	
+	
+	
+/*Geneal Styles */
+
+	svg {
+		
+		color : #98971a !important  ; 
+	
+	}
 
 	
 	
