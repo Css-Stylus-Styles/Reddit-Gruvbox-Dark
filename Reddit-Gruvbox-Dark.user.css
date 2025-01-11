@@ -458,15 +458,20 @@
     --color-primary-background-selected: #629FFF;
     --color-primary-onBackground: #ffffff;
     --color-primary-onBackground-selected: #000000;
-    --color-secondary: #F2F4F5;
-    --color-secondary-hover: #ffffff;
+		
+		
+		/*Side bar stuff */
+    --color-secondary: #b8bb26;
+    --color-secondary-hover: #ffd29c;
     --color-secondary-weak: #82959B;
-    --color-secondary-onBackground: #ffffff;
+		
+		/*Home button on the Side bar */
+    --color-secondary-onBackground: #ffd29c;
 		
 		/*Search bar color background */
     --color-secondary-background: #16181a !important;
 		/*Search bar background hover */
-    --color-secondary-background-hover: #322f04 !important;
+    --color-secondary-background-hover: #1d1b1a !important;
     --color-secondary-background-selected: #33464C;
     --color-secondary-plain: #F2F4F5;
     --color-secondary-plain-hover: #ffffff;
@@ -973,9 +978,9 @@
 	/*Small Headings and other Secondary text */
 	
 	/*Main Text color */
-	.text-14 {
-	color: #fbf1c7 !important ;
- 	font-family: "Literata Variable" !important ; 
+span.text-14 {
+	color: #fabd2f !important ;
+ 	font-family: "Bricolage Grotesque" !important ; 
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
@@ -992,7 +997,7 @@
 	
 	/*Reddit Main page Headings */
 	.text-secondary-weak {
-    color: #5c7b42 !important ; 
+    color: #83a598 !important ; 
 		font-family: "Bricolage Grotesque" !important ; 
 }
 	
@@ -1006,6 +1011,33 @@ h3.i18n-list-item-post-title {
     line-height: 1.5; /* Adjust the line height */
     margin-bottom: 0.5rem; /* Add some margin at the bottom */
 }
+	
+	
+	
+	
+	
+	/*Recent Subreddit Side bar */
+	div.truncate {
+	color: #83a598 !important ; 
+	font-family: "Jetbrains Mono Variable", "Jetbrains Mono" !important; 
+	
+	}
+	
+	/*Home BUtton selected font */
+	.text-secondary-onBackground {
+    color: var(--color-secondary-onBackground) !important;
+		font-family: "Bricolage Grotesque" !important ; 
+}
+
+.text-secondary {
+    color: var(--color-secondary) !important;
+		font-family: "Bricolage Grotesque" !important ; 
+}
+
+	
+	
+	
+
 	
 	
 	
