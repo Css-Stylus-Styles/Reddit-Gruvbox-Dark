@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           www.reddit.com - Mar 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -275,12 +275,62 @@
 
 
 
+:root {
+  --font-margon: "Margon 360 W08 Medium", sans-serif
+  --font-bricolage: "Bricolage Grotesque", sans-serif
+  --font-lora: "Lora", serif
+  --font-linguistics-pro: "Linguistics Pro", sans-serif
+  --font-commit-mono: "CommitMono", monospace
+  --font-fira-mono: "Fira Mono", monospace
+  --font-spline-sans: "Spline Sans Variable", sans-serif
+  --font-hack: "Hack", monospace
+  --font-karla: "Karla", sans-serif
+  --font-karla-medium: "Karla Medium", sans-serif
+  --font-karla-bold: "Karla Bold", sans-serif
+  --font-archivo: "Archivo", sans-serif
+  --font-literata: "Literata Variable", serif
+}
 
 
+	
+	
+	
+	/* jetbrains-mono-latin-wght-normal */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
 
 
+	
+	
+	/* inclusive-sans-latin-400-normal */
+@font-face {
+  font-family: 'Inclusive Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
 
 
+	
+	
+	
+	/* manrope-latin-wght-normal */
+@font-face {
+  font-family: 'Manrope Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
 
 
 
@@ -534,6 +584,33 @@
 	
 	
 	
+	:root {
+	--font-Margon: "Margon 360 W08 Medium";
+	--font-BricolageGrotesque: "Bricolage Grotesque";
+	--font-Lora: "Lora";
+	--font-LinguisticsPro: "Linguistics Pro";
+	--font-CommitMono: "CommitMono";
+	--font-FiraMono: 'Fira Mono';
+	--font-SplineSansVariable: 'Spline Sans Variable';
+	--font-Hack: "Hack";
+	--font-Karla: "Karla";
+	--font-KarlaMedium: "Karla Medium";
+	--font-KarlaBold: "Karla Bold";
+	--font-Archivo: "Archivo";
+	--font-LiterataVariable: 'Literata Variable';
+  	--font-JetbrainsVar: 'JetBrains Mono Variable';
+  	--font-Jetbrains: 'JetBrains Mono';
+  --font-Inclusive: 'Inclusive Sans';
+  --font-Manrope: 'Manrope Variable';
+}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	.theme-beta, .theme-light.theme-beta {
     --spacer-a-px: 0.125rem;
@@ -702,9 +779,6 @@
     --color-media-onBackground: #FFFFFF;
     --color-media-onBackground-disabled: #FFFFFF3F;
     --color-media-onBackground-weak: #E5EBEE;
-    --color-media-onbackground: #ffffff;
-    --color-media-onbackground-disabled: #ffffff40;
-    --color-media-onbackground-weak: #B7CAD4;
     --color-neutral-background: #FFFFFF;
     --color-neutral-background-container: #F6F8F9;
     --color-neutral-background-container-hover: #EEF1F3;
@@ -907,6 +981,10 @@
 	
 	
 	
+	
+	
+	
+	
 	/*Cusom Css styles*/
 	
 	/*Main page */
@@ -940,14 +1018,33 @@
 	
 	
 	
+		
+	
+	span.text-14 {
+  font-family: 'Bricolage Grotesque' !important;
+}
+	
+	/* Target the specific navigation items in the div */
+div > faceplate-tracker li a span.flex-col span.text-14 {
+    color: #fabd2f !important;
+    font-family: "Bricolage Grotesque"!important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+}
+
+/* If you need to target the secondary text (currently empty spans) */
+div > faceplate-tracker li a span.flex-col span.text-12 {
+    font-family: "Jetbrains Mono" !important;
+}
+	
+	
+
 	
 	
 	
-	
-	
-	
-	
-	
+	faceplate-tracker a span span.text-14 {
+  font-family: 'Bricolage Grotesque' !important;
+}
 	
 	
 	
@@ -985,6 +1082,15 @@ span.text-14 {
     line-height: 1.25rem;
 }
 	
+	
+	
+	span.flex.flex-col{
+    font-family: "Jetbrains Mono" !important;
+}
+
+
+	
+	
 	/*Reddit Subreddit names */
 	/*Reddit Front and subreddits */
 	a.flex {
@@ -995,11 +1101,26 @@ span.text-14 {
     border-radius: 8px; /* Add rounded corners */
 }
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*Reddit Main page Headings */
 	.text-secondary-weak {
     color: #83a598 !important ; 
 		font-family: "Bricolage Grotesque" !important ; 
 }
+	
+	
+	
+	
 	
 	
 	
@@ -1016,10 +1137,28 @@ h3.i18n-list-item-post-title {
 	
 	
 	
+	
+	
+	
+	/*Custon Feeds text color */
+	.text-secondary-weak {
+	color: #fe8019 !important ; 
+	font-family: "Bricolage Grotesque" !important ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*Recent Subreddit Side bar */
 	div.truncate {
 	color: #83a598 !important ; 
-	font-family: "Jetbrains Mono Variable", "Jetbrains Mono" !important; 
+	font-family: "bricolage Grotesque" !important; 
+	font-weight: 400 !important ;
 	
 	}
 	
@@ -1042,6 +1181,12 @@ h3.i18n-list-item-post-title {
 	
 	
 	
+	
+	
+	
+	
+	
+	
 	/*Hide Stuff*/
 	a#reddit-logo{
 		display: none !important ;
@@ -1050,11 +1195,7 @@ h3.i18n-list-item-post-title {
 	
 	
 	
-	
-	
-	
-	
-	
+
 	
 	
 	
